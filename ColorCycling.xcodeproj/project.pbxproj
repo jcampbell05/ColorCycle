@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A2051571AE51B7200C2D36A /* ILBMPalette.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A63B5971AE076A700BD6900 /* ILBMPalette.cpp */; };
 		1A63B56D1AE058CF00BD6900 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A63B56C1AE058CF00BD6900 /* main.m */; };
 		1A63B5701AE058CF00BD6900 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A63B56F1AE058CF00BD6900 /* AppDelegate.m */; };
 		1A63B5731AE058CF00BD6900 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1A63B5721AE058CF00BD6900 /* ViewController.mm */; };
@@ -15,7 +16,6 @@
 		1A63B57B1AE058CF00BD6900 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A63B5791AE058CF00BD6900 /* LaunchScreen.xib */; };
 		1A63B5871AE058CF00BD6900 /* ColorCyclingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A63B5861AE058CF00BD6900 /* ColorCyclingTests.m */; };
 		1A63B5951AE0728000BD6900 /* ILBMBitmap.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1A63B5941AE0728000BD6900 /* ILBMBitmap.mm */; };
-		1A63B5981AE076A700BD6900 /* ILBMPalette.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1A63B5971AE076A700BD6900 /* ILBMPalette.mm */; };
 		1A9B59F21AE302F30011B017 /* TESTRAMP.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A9B59F11AE302F30011B017 /* TESTRAMP.json */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +46,7 @@
 		1A63B5931AE0728000BD6900 /* ILBMBitmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBMBitmap.h; sourceTree = "<group>"; };
 		1A63B5941AE0728000BD6900 /* ILBMBitmap.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILBMBitmap.mm; sourceTree = "<group>"; };
 		1A63B5961AE076A700BD6900 /* ILBMPalette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBMPalette.h; sourceTree = "<group>"; };
-		1A63B5971AE076A700BD6900 /* ILBMPalette.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILBMPalette.mm; sourceTree = "<group>"; };
+		1A63B5971AE076A700BD6900 /* ILBMPalette.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ILBMPalette.cpp; sourceTree = "<group>"; };
 		1A9B59F11AE302F30011B017 /* TESTRAMP.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TESTRAMP.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,7 +100,7 @@
 				1A63B5931AE0728000BD6900 /* ILBMBitmap.h */,
 				1A63B5941AE0728000BD6900 /* ILBMBitmap.mm */,
 				1A63B5961AE076A700BD6900 /* ILBMPalette.h */,
-				1A63B5971AE076A700BD6900 /* ILBMPalette.mm */,
+				1A63B5971AE076A700BD6900 /* ILBMPalette.cpp */,
 			);
 			path = ColorCycling;
 			sourceTree = "<group>";
@@ -234,9 +234,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A63B5951AE0728000BD6900 /* ILBMBitmap.mm in Sources */,
+				1A2051571AE51B7200C2D36A /* ILBMPalette.cpp in Sources */,
 				1A63B5731AE058CF00BD6900 /* ViewController.mm in Sources */,
 				1A63B5701AE058CF00BD6900 /* AppDelegate.m in Sources */,
-				1A63B5981AE076A700BD6900 /* ILBMPalette.mm in Sources */,
 				1A63B56D1AE058CF00BD6900 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

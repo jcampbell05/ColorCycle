@@ -56,7 +56,7 @@ static double const ILBMFrameDuration = 1.0 / 25.0;
 - (void)updateImage
 {
     CGSize size = bitmap->getSize();
-    auto pixels = bitmap->pixelsForFrame(frame);
+    auto pixels = bitmap->pixelsForFrame((int)frame);
 
     ILBMPixel *rawPixels = pixels->data();
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();

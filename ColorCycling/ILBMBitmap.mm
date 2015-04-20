@@ -7,7 +7,6 @@
 //
 
 #import "ILBMBitmap.h"
-
 #import "ILBMPalette.h"
 
 ILBMBitmap::ILBMBitmap(std::string path)
@@ -116,7 +115,7 @@ void ILBMBitmap::optimize()
     }
 }
 
-std::vector<ILBMColor> * ILBMBitmap::pixelsForFrame(NSInteger frame)
+std::vector<ILBMColor> * ILBMBitmap::pixelsForFrame(int frame)
 {
     NSInteger totalPixels = pixels.size();
     auto palletteColors = pallete->colorsForFrame(frame);

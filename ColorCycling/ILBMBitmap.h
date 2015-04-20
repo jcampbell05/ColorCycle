@@ -34,5 +34,5 @@ public:
     ~ILBMBitmap();
     
     CGSize getSize();
-    std::vector<ILBMPixel> * pixelsForFrame(NSInteger frame);
+    std::vector<ILBMPixel> * pixelsForFrame(int frame);
 };

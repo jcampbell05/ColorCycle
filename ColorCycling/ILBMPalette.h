@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 CC. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <stdlib.h>
 #import <unordered_map>
 #import <vector>
 
@@ -40,7 +40,7 @@ private:
     std::vector<ILBMColor *> * reverseColorsForCycle(std::vector<ILBMColor *> *colors, ILBMCycle *cycle);
     std::vector<ILBMColor *> * blendShiftColorsForCycleAndCycleAmount(std::vector<ILBMColor *> *colors, ILBMCycle *cycle, float cycleAmount);
  
-    std::unordered_map<NSInteger, ILBMColor *> *animatedColors;
+    std::unordered_map<int, ILBMColor *> *animatedColors;
     std::vector<ILBMColor *> *colors;
     std::vector<ILBMColor *> *colorFrameCache = nullptr;
     std::vector<ILBMCycle *> *cycles;
@@ -49,5 +49,5 @@ public:
     ILBMPalette();
     ~ILBMPalette();
 
-    std::vector<ILBMColor *> * colorsForFrame(NSInteger frame);
+    std::vector<ILBMColor *> * colorsForFrame(int frame);
 };
