@@ -21,8 +21,8 @@ class ILBMBitmap
 private:
     
     ILBMPalette *pallete;
-    std::vector<NSInteger> pixels;
-    std::vector<NSInteger> optimizedPixels;
+    std::vector<int> pixels;
+    std::vector<int> optimizedPixels;
     std::vector<ILBMColor> *pixelFrameCache = nullptr;
     
     CGSize size;

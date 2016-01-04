@@ -66,13 +66,13 @@ ILBMBitmap::ILBMBitmap(std::string path)
              pallete->cycles->push_back(cycle);
          }];
         
-        pixels = std::vector<NSInteger>();
+        pixels = std::vector<int>();
         
         NSArray *filePixels = fileDictionary[@"pixels"];
         
         [filePixels enumerateObjectsUsingBlock:^(NSNumber *pixel, NSUInteger idx, BOOL *stop)
          {
-             NSInteger pixelValue = [pixel integerValue];
+             int pixelValue = [pixel intValue];
              pixels.push_back(pixelValue);
          }];
         
@@ -100,12 +100,14 @@ CGSize ILBMBitmap::getSize()
 
 void ILBMBitmap::optimize()
 {
-    optimizedPixels = std::vector<NSInteger>();
+    optimizedPixels = std::vector<int>();
     
-    NSInteger totalPixels = pixels.size();
-    for (NSInteger pixelIndex = 0; pixelIndex < totalPixels; pixelIndex ++)
+    int totalPixels = (int)pixels.size();
+    optimizedPixels.reserve(totalPixels);
+    
+    for (int pixelIndex = 0; pixelIndex < totalPixels; pixelIndex ++)
     {
-        NSInteger pixelValue = pixels[pixelIndex];
+        int pixelValue = pixels[pixelIndex];
         ILBMColor *animatedColor = pallete->animatedColors->operator[](pixelValue);
         
         if (animatedColor)
